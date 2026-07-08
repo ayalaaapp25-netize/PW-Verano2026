@@ -1,0 +1,137 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Helvetica, Helvetica, sans-serif;
+}
+
+body{
+    background:#f0f2f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.contenedor{
+    width:100%;
+    max-width:1100px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+
+
+.izquierda{
+    width:50%;
+}
+
+.logo{
+    color:#1877f2;
+    font-size:65px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.descripcion{
+    font-size:28px;
+    color:#1c1e21;
+    line-height:1.3;
+    width:520px;
+}
+
+
+.derecha{
+    width:400px;
+}
+
+.sesion{
+    background:#fff;
+    border-radius:10px;
+    padding:18px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.sesion input{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #dddfe2;
+    border-radius:6px;
+    font-size:17px;
+}
+
+.sesion input:focus{
+    outline:none;
+    border:1px solid #1877f2;
+}
+
+.btn-sesion{
+    width:100%;
+    background:#0866ff;
+    color:white;
+    border:none;
+    padding:14px;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn-sesion:hover{
+    background:#166fe5;
+}
+
+.olvido{
+    display:block;
+    text-align:center;
+    margin:18px 0;
+    color:#1877f2;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.linea{
+    border:none;
+    border-top:1px solid #dadde1;
+    margin:20px 0;
+}
+
+.btn-crear{
+    display:block;
+    width:60%;
+    margin:auto;
+    background:#42b72a;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:14px;
+    border-radius:6px;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.btn-crear:hover{
+    background:#42b72a;
+}
+
+.pagina{
+    text-align:center;
+    margin-top:25px;
+    font-size:14px;
+}
+
+.pagina b{
+    color:#000;
+}
+
+@media (max-width:760px){
+    .contenedor{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
