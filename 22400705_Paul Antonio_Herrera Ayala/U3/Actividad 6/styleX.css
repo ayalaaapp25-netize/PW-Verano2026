@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.contenedor{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    padding: 40px;
+}
+
+.ladoizquierdo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoX{
+    
+    font-size: 250px;
+    font-weight: 900;
+    color:black;
+    line-height: 1;
+}
+
+.ladoderecho{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 68px;
+}
+
+.subtitulo{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.boton{
+    width: 320px;
+    height: 44px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.blanco{
+    background: white;
+    color: black;
+}
+
+.azul{
+    background: #1d9bf0;
+    color: white;
+}
+
+.negro{
+    background: black;
+    color: #1d9bf0;
+    border: 1px solid #536471;
+}
+
+.icono,
+.iconoApple{
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.separador{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.linea{
+    flex: 1;
+    height: 1px;
+    background: #2f3336;
+}
+
+.circulo{
+    margin: 0 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.texto{
+    width: 320px;
+    color: #71767b;
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+
+.preguntaCuenta{
+    margin-top: 40px;
+    margin-left: 65px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.informacion{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    color: #71767b;
+    font-size: 13px;
+    text-align: center;
+}
+
+.informacion a{
+    color: #71767b;
+    text-decoration: none;
+}
+
+.informacion a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    color: #71767b;
+}
+
+@media (max-width: 1000px){
+
+    .contenedor{
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .ladozzquierdo,
+    .ladoderecho{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ladoderecho{
+        align-items: center;
+    }
+
+    .logoX{
+        font-size: 180px;
+    }
+
+    .titulo{
+        text-align: center;
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .subtitulo{
+        text-align: center;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .pregunta{
+        text-align: center;
+    }
+
+}
