@@ -1,0 +1,855 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+body{
+    background:#040714;
+    color:white;
+}
+
+.seccion1{
+
+    width:100%;
+    height:100vh;
+    background: #333 url("Imagenes/main-hero-background.png") no-repeat center / cover;    
+    position:relative;
+}
+
+.seccion1::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+
+}
+
+.encabezado{
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding-left:40px;
+    padding-right:40px;
+
+    position:relative;
+    z-index:2;
+}
+
+.logoDisney{
+
+    font-size:300px;
+
+    font-weight:bold;
+
+    color:white;
+}
+
+.botonlogin{
+
+    width:170px;
+    height:45px;
+
+    border:1px solid white;
+
+    border-radius:6px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.botonlogin:hover{
+
+    background:white;
+    color:black;
+
+}
+
+.contenidoprincipal{
+
+    position:relative;
+    z-index:2;
+
+    width:650px;
+
+    margin-left:40px;
+    margin-top:70px;
+}
+
+.tituloprincipal{
+
+    font-size:58px;
+
+    font-weight:bold;
+
+    line-height:70px;
+
+    margin-bottom:40px;
+
+}
+
+.registro{
+
+    display:flex;
+
+    margin-bottom:25px;
+
+}
+
+.correo{
+
+    width:420px;
+    height:60px;
+
+    background:#31343e;
+
+    color:#d0d0d0;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:20px;
+
+    border-radius:5px 0 0 5px;
+
+}
+
+.botonSuscribirse{
+
+    width:240px;
+    height:60px;
+
+    background:#2fc8ff;
+
+    color:black;
+
+    font-weight:bold;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:0 5px 5px 0;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.botonSuscribirse:hover{
+
+    background:#55d7ff;
+
+}
+
+.promocion{
+
+    margin-top:25px;
+
+    font-size:17px;
+
+}
+
+.planes{
+
+    margin-top:12px;
+
+    text-decoration:underline;
+
+    cursor:pointer;
+
+    margin-bottom:40px;
+
+}
+
+.marcas{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+}
+
+.marca{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+.seccion2{
+
+    width:100%;
+    min-height:100vh;
+
+    background:#040714;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:80px 40px;
+
+}
+
+.encabezado2{
+
+    font-size:52px;
+    font-weight:700;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.tituloprincipal2{
+
+    font-size:22px;
+
+    color:#C0C0C0;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.postergrande{
+
+    width:750px;
+    height:930px;
+
+    background:#111 url("imagenes/starwars.png") no-repeat center / cover;
+
+    border-radius:15px;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+
+    padding-bottom:50px;
+
+    box-shadow:0 0 35px rgba(0,0,0,.45);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.postergrande:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 45px rgba(0,0,0,.65);
+
+}
+
+.textoposter{
+
+    width:90%;
+
+    text-align:center;
+
+    
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:white;
+
+    text-shadow:0 0 12px black;
+
+    margin-bottom: 400px;
+
+}
+
+
+
+
+
+.seccion3{
+
+    width:100%;
+    min-height:100vh;
+
+    background:#040714;
+
+    padding:80px 40px;
+
+}
+
+.titulo3{
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:60px;
+
+}
+
+.contenedorPeliculas{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+.pelicula{
+
+    width:185px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.numero{
+
+    width:90%;
+
+    font-size:70px;
+
+    font-weight:700;
+
+    color:#7AC7FF;
+
+    margin-bottom:12px;
+
+    text-align:left;
+
+}
+
+.imagenPelicula{
+
+    width:150px;
+    height:250px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 0 20px rgba(0,0,0,.35);
+
+}
+
+.imagenPelicula:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 35px rgba(255,255,255,.18);
+
+}
+
+.nombrePelicula{
+
+    margin-top:18px;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    line-height:26px;
+
+}
+
+
+
+.pelicula1{
+
+    background:#111 url("Imagenes/1.webp") no-repeat center / cover;
+
+}
+
+.pelicula2{
+
+    background:#111 url("Imagenes/2.webp") no-repeat center / cover;
+
+}
+
+.pelicula3{
+
+    background:#111 url("Imagenes/3.webp") no-repeat center / cover;
+
+}
+
+.pelicula4{
+
+    background:#111 url("Imagenes/4.webp") no-repeat center / cover;
+
+}
+
+.pelicula5{
+
+    background:#111 url("Imagenes/5.webp") no-repeat center / cover;
+
+}
+
+.pelicula6{
+
+    background:#111 url("Imagenes/6.webp") no-repeat center / cover;
+
+}
+
+.pelicula7{
+
+    background:#111 url("Imagenes/7.webp") no-repeat center / cover;
+
+}
+
+
+
+
+
+/*======================================
+            SECCIÓN 4
+======================================*/
+
+.seccion4{
+
+    width:100%;
+    min-height:100vh;
+
+    background:#040714;
+
+    padding:90px 60px;
+
+}
+
+.titulo4{
+
+    text-align:center;
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.subtitulo4{
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:#C0C0C0;
+
+    margin-bottom:60px;
+
+}
+
+.tablaPlanes{
+
+    width:1200px;
+
+    margin:auto;
+
+    border:1px solid #2E3446;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.fila{
+
+    display:flex;
+
+}
+
+.celda{
+
+    flex:1;
+
+    min-height:95px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    color:white;
+
+    font-size:18px;
+
+    border-right:1px solid #2E3446;
+
+    border-bottom:1px solid #2E3446;
+
+}
+
+.celda:last-child{
+
+    border-right:none;
+
+}
+
+.fila:last-child .celda{
+
+    border-bottom:none;
+
+}
+
+.encabezadoTabla .celda{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.caracteristica{
+
+    background:#111827;
+
+    font-weight:700;
+
+}
+
+.premium{
+
+    background:#0074F0;
+
+}
+
+.estandar{
+
+    background:#111827;
+
+}
+
+.anuncios{
+
+    background:#111827;
+
+}
+
+.nombrePlan{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.precioPlan{
+
+    font-size:16px;
+
+    color:#ECECEC;
+
+}
+
+.fila:nth-child(even){
+
+    background:#0B1020;
+
+}
+
+.fila:nth-child(odd){
+
+    background:#080C18;
+
+}
+
+.celda:hover{
+
+    background:#16213A;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+
+
+
+.seccion5{
+
+    width:100%;
+    min-height:100vh;
+
+    background:#040714;
+
+    padding:90px 50px;
+
+}
+
+.titulo5{
+
+    text-align:center;
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.subtitulo5{
+
+    width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:#C0C0C0;
+
+    margin-bottom:70px;
+
+    line-height:35px;
+
+}
+
+.contenedorDeportes{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.tarjetaDeporte{
+
+    width:340px;
+
+    background:#111827;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 0 20px rgba(0,0,0,.30);
+
+}
+
+.tarjetaDeporte:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 35px rgba(255,255,255,.15);
+
+}
+
+.imagenDeporte{
+
+    width:100%;
+
+    height:190px;
+
+}
+
+
+
+
+
+
+.serieA{
+
+    background:#111 url("Imagenes/sports1.webp") no-repeat center / cover;
+
+}
+
+.europa{
+
+    background:#111 url("Imagenes/sports2.webp") no-repeat center / cover;
+
+}
+
+.baseball{
+
+    background:#111 url("Imagenes/sports3.webp") no-repeat center / cover;
+
+}
+
+.indycar{
+
+    background:#111 url("Imagenes/sports4.webp") no-repeat center / cover;
+
+}
+
+.ered{
+
+    background:#111 url("Imagenes/sports5.webp") no-repeat center / cover;
+
+}
+
+.atp{
+
+    background:#111 url("Imagenes/sports6.webp") no-repeat center / cover;
+
+}
+
+
+
+
+
+
+.seccion6{
+
+    width:100%;
+    min-height:100vh;
+
+    background:#040714;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:90px 40px;
+
+}
+
+.titulo6{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.subtitulo6{
+
+    font-size:22px;
+
+    color:#C0C0C0;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.favoritos{
+
+    width:1200px;
+    height:650px;
+
+    background:#111 url("Imagenes/favoritos.webp") no-repeat center / contain;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.favoritos:hover{
+
+    transform:scale(1.01);
+
+}
+
+
+.seccion7{
+    width:100%;
+
+    background:#040714;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:9px 4px;
+
+}
+
+.mensaje{
+   
+
+    font-size:12px;
+
+    color:#C0C0C0;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+
+}
