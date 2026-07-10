@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:white;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.header{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:18px 30px;
+    gap:20px;
+}
+
+.gmail,
+.imagenes{
+    font-size:14px;
+    cursor:pointer;
+    color:#202124;
+}
+
+
+.gmail:hover,
+.imagenes:hover{
+    text-decoration:underline;
+}
+
+.acceder button{
+    background:#1a73e8;
+    color:white;
+    border:none;
+    border-radius:25px;
+    padding:10px 22px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.acceder button:hover{
+    background:#1765cc;
+}
+
+
+.contenedor{
+    flex:1;
+    display:flex;
+    grid-template-columns: (1,1fr);
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:92px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:30px;
+    user-select:none;
+}
+
+.g1{
+    color:#4285f4;
+}
+
+.o1{
+    color:#ea4335;
+}
+
+.o2{
+    color:#fbbc05;
+}
+
+.g2{
+    color:#4285f4;
+}
+
+.l{
+    color:#34a853;
+}
+
+.e{
+    color:#ea4335;
+}
+
+
+
+.busqueda input{
+
+    width:600px;
+    height:48px;
+
+    border-radius:30px;
+
+    border:1px solid #dfe1e5;
+
+    padding-left:20px;
+
+    font-size:16px;
+
+    outline:none;
+
+    
+}
+
+.busqueda input:hover,
+.busqueda input:focus{
+
+    box-shadow:0 1px 6px rgba(32,33,36,.28);
+
+    border-color:transparent;
+}
+
+
+
+.botones{
+
+    margin-top:35px;
+}
+
+.botones button{
+
+    background:#f8f9fa;
+
+    border:1px solid #f8f9fa;
+
+    padding:11px 18px;
+
+    margin:0 6px;
+
+    cursor:pointer;
+
+    color:#3c4043;
+
+    font-size:14px;
+
+    border-radius:4px;
+}
+
+.botones button:hover{
+
+    border:1px solid #dadce0;
+
+    box-shadow:0 1px 2px rgba(0,0,0,.1);
+}
+
+
+
+.footer{
+
+    background:#f2f2f2;
+}
+
+.pais{
+
+    padding:15px 30px;
+
+    color:#70757a;
+
+    border-bottom:1px solid #dadce0;
+
+    font-size:15px;
+}
+
+.pie{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:15px 30px;
+}
+
+.izquierda,
+.derecha{
+
+    display:flex;
+
+    gap:25px;
+
+    color:#70757a;
+
+    font-size:14px;
+}
+
+.izquierda div,
+.derecha div{
+
+    cursor:pointer;
+}
+
+.izquierda div:hover,
+.derecha div:hover{
+
+    text-decoration:underline;
+}
+
+@media (max-width:760px){
+        .contenedor{
+            grid-template-columns: (1,1fr);
+        }
+}
